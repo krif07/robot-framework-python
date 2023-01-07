@@ -17,3 +17,10 @@ pip install --upgrade robotframework-seleniumlibrary
 ```sh
 https://github.com/lte2000/intellibot
 ```
+
+# Run Test Case
+
+```sh
+cd .\Test_Case\ 
+robot .\Test_uno.robot
+```
