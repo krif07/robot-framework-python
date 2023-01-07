@@ -23,4 +23,8 @@ https://github.com/lte2000/intellibot
 ```sh
 cd .\Test_Case\ 
 robot .\Test_uno.robot
+
+# reports in different folder
+robot -d report_folder_name .\Test_uno.robot
+robot -d ..\report_folder_name_hhmm .\Test_uno.robot
 ```
