@@ -3,9 +3,11 @@ Documentation    Example project to test Variables in Robotframework
 Library    SeleniumLibrary
 
 *** Variables ***
-${name}             =   Cristian Fernando
-${lastName}         =   Dávila
-${motherLastName}   =   López
+${name} =               Cristian Fernando
+${lastName} =           Dávila
+${motherLastName} =     López
+${num1} =               ${4}
+${num2} =               ${3}
 
 *** Test Cases ***
 Test demo variables one
@@ -36,6 +38,13 @@ Test demo variables sum
     log to console    ${d}
     Log     ${c}
     Log     ${d}
+    ${sum}      evaluate    ${num1} + ${num2}
+    Log To Console    ${sum}
+    Log     ${sum}
+    ${multi}    evaluate    ${num1} * ${num2}
+    Log To Console    ${multi}
+    Log     ${multi}
+
 
 
 *** Keywords ***
