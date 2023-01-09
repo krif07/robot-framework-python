@@ -7,6 +7,7 @@ ${url} =            https://testingqarvn.com.es/
 ${browser} =        chrome
 ${practicas_qa_menu} =      xpath=//nav[@id='top-menu-nav']//a[contains(text(),'Prácticas QA')]
 ${menu_radio_buttons} =     xpath=//div/a[contains(text(),'Radio Buttons')]
+${menu_checkbox} =     xpath=//div/a[contains(text(),'Checkbox')]
 ${radio_buttons_radio_webdriverio_label} =    //label[text()='WebdriverIO']
 ${radio_buttons_radio_webdriverio} =    css=input[value='WebdriverIO']
 ${radio_buttons_radio_cypressio_label} =       //label[text()='CypressIO']
@@ -38,9 +39,10 @@ Validate checkboxes
     maximize browser window
     title should be    TestingQaRvn | Mundo del Testing
     click element    ${practicas_qa_menu}
-    wait until element is visible    ${menu_radio_buttons}
-    scroll element into view    ${menu_radio_buttons}
-    click element    ${menu_radio_buttons}
+    wait until element is visible    ${menu_checkbox}
+    scroll element into view    ${menu_checkbox}
+    click element    ${menu_checkbox}
+    wait until element is visible    ${checkbox_python}
     scroll element into view    ${checkbox_python}
     click element    ${checkbox_php}
     sleep    1
