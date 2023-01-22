@@ -31,3 +31,13 @@ robot -d ..\report_folder_name_hhmm .\Test_uno.robot
 # run with tag
 robot -d ..\report_folder_name_hhmm -i tag .\Test_uno.robot
 ```
+
+# Libraries
+
+```sh
+cd .\Test_Case\ 
+library to Excel
+pip install openpyxl
+https://pypi.org/project/openpyxl/
+
+```
