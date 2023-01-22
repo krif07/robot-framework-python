@@ -2,11 +2,17 @@ import os
 
 
 def create_folder():
-    os.mkdir("C:\\Users\\krif0\\PycharmProjects\\DEMO_FOLDER")
+    try:
+        os.mkdir("C:\\Users\\krif0\\PycharmProjects\\DEMO_FOLDER")
+    except FileExistsError as e:
+        print(f"folder already exist -> {e}")
 
 
 def create_sub_folder(name):
-    os.mkdir("C:\\Users\\krif0\\PycharmProjects\\DEMO_FOLDER\\" + name)
+    try:
+        os.mkdir("C:\\Users\\krif0\\PycharmProjects\\DEMO_FOLDER\\" + name)
+    except FileExistsError as e:
+        print(f"sub folder already exist -> {e}")
 
 
 def concat_name(fn, ln, title):

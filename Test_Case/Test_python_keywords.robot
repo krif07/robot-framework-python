@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Example project to test python keywords
-...              robot -d ..\reports -i python_keywords .\Test_Case\Test_python_keywords.robot
+...              robot -d reports -i python_keywords .\Test_Case\Test_python_keywords.robot
 
 Library    SeleniumLibrary
 Library    ../keywords/Keywords_Python.py
